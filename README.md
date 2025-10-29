@@ -1,4 +1,4 @@
-![Portfolio thumbnail](thumbnail.png)
+![Portfolio thumbnail](thumbnail1.png)
 
 # Clear Portfolio
 
