@@ -1,5 +1,3 @@
-![Portfolio thumbnail](thumbnail1.png)
-
 # Clear Portfolio
 
 A minimal portfolio crafted with focus and clarity.
