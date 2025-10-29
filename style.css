@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap");
+
+:root {
+  --max-width: 780px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding: 28px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1.45;
+  font-weight: 300;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+.profile h1 {
+  font-size: clamp(28px, 6vw, 56px);
+  letter-spacing: -0.5px;
+  margin: 0;
+  font-weight: 700;
+}
+.profile .role {
+  margin: 8px 0 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222;
+}
+.meta {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #111;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.brand-link {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.brand-link:hover {
+  text-decoration: none;
+}
+.brand-link i {
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.socials a {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 120ms ease, color 120ms ease,
+    transform 120ms ease;
+}
+.socials a:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-1px);
+}
+.socials i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.socials a {
+  transition: background-color 180ms ease, color 180ms ease,
+    transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 200ms ease;
+}
+.socials a:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+section {
+  margin-top: 20px;
+}
+h2 {
+  font-size: 16px;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.signature {
+  text-align: right;
+  margin-top: 14px;
+}
+.signature-mark {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: clamp(36px, 5.5vw, 72px);
+  line-height: 1;
+  letter-spacing: 0;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #6a6a6a;
+}
+
+.signature::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background: #bdbdbd;
+  margin-top: 6px;
+  margin-left: auto;
+}
+ul {
+  margin: 8px 0 0;
+  padding-left: 1.1rem;
+}
+
+.skills-tiles {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tile {
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.skill-tile:hover {
+  background: #111;
+}
+
+p,
+li {
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+article h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+.summary p {
+  margin: 0;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 26px;
+}
+button {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  background: #f7f7f7;
+}
+
+section + section {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 18px;
+}
+
+.container > section:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 18px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px;
+    margin: 20px;
+  }
+}
+
+.hero .hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.hero .hero-text {
+  flex: 1 1 60%;
+}
+.hero .hero-visual {
+  flex: 0 0 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+}
+@media (max-width: 780px) {
+  .hero .hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .hero .hero-visual {
+    align-self: flex-end;
+  }
+  .hero .hero-image {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  /* Hide profile picture on small screens */
+  .hero .hero-visual {
+    display: none;
+  }
+  /* Slightly smaller social buttons on mobile */
+  .socials a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .actions {
+    display: none;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeUp 0.45s ease forwards;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+}
